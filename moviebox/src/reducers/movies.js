@@ -1,9 +1,10 @@
-export default (state: [], action) => {
+export default (state = [], action) => {
   switch(action.type) {
-    case 'LOADING_MOVIES':
-      return state
 
-    case 'LOADING_MOVIES_SUCCESS':
+    case 'LOADING_MOVIES':
+     return state
+
+    case 'GET_MOVIES_SUCCESS':
       return action.movies
 
     case 'CREATE_MOVIE_SUCCESS':
@@ -16,12 +17,12 @@ export default (state: [], action) => {
       return action.payload
 
     case 'EDIT_MOVIE':
-      return state 
+      return state
 
     case 'SUCCESSFULLY_EDITED_MOVIE':
       return action.payload
 
-    default: return state
-
+    default:
+      return state;
   }
 }

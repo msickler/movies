@@ -4,7 +4,8 @@ import movies from './reducers/movies';
 import moviesForm from './reducers/moviesForm'
 
 const reducers = combineReducers({
-  movies, moviesForm
+  movies,
+  moviesForm
 });
 
 const middleware = [thunk];

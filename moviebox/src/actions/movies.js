@@ -1,10 +1,11 @@
+import { resetMovieForm } from './movieForm';
 import fetch from 'isomorphic-fetch';
 
 const API_URL = process.env.REACT_APP_API_URL;
 
 const setMovies = movies => {
   return {
-    type: GET_MOVIES_SUCCESS,
+    type: 'GET_MOVIES_SUCCESS',
     movies
   }
 }
